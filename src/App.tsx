@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import Modal from "./components/Modal";
 
-export default function App() {
+function App () {
   const formRef1 = useRef<HTMLFormElement>(null);
   const formRef2 = useRef<HTMLFormElement>(null);
 
@@ -33,3 +33,5 @@ export default function App() {
     </>
   );
 }
+
+export default App

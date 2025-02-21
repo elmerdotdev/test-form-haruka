@@ -6,7 +6,7 @@ interface Props {
   children: ReactNode;
 }
 
-export default function Modal({ button, formRef, children }: Props) {
+function Modal ({ button, formRef, children }: Props) {
   const handleButtonClick = () => {
     formRef.current?.requestSubmit()
   };
@@ -20,3 +20,5 @@ export default function Modal({ button, formRef, children }: Props) {
     </div>
   );
 }
+
+export default Modal
