@@ -10,23 +10,25 @@ function App () {
       <Modal
         button={<button type="button">Add User</button>}
         formRef={formRef1}>
-
-        <form ref={formRef1} onSubmit={(e) => { 
-          e.preventDefault(); 
-          console.log("User added"); 
-        }}>
+        <form
+          ref={formRef1}
+          onSubmit={(e) => { 
+            e.preventDefault(); 
+            console.log("User added"); 
+          }}>
           <input type="text" name="name" placeholder="Enter Name" />
         </form>
-
       </Modal>
 
       <Modal
         button={<button type="button">Update</button>}
         formRef={formRef2}>
-        <form ref={formRef2} onSubmit={(e) => { 
-          e.preventDefault(); 
-          console.log("User updated") 
-        }}>
+        <form
+          ref={formRef2}
+          onSubmit={(e) => { 
+            e.preventDefault(); 
+            console.log("User updated") 
+          }}>
           <input type="email" name="email" placeholder="Enter Email" />
         </form>
       </Modal>
